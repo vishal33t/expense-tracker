@@ -6,7 +6,9 @@ require("dotenv").config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin : "https://vishal-expense-tracker33v.vercel.app"
+}));
 app.use(express.json());
 
 
